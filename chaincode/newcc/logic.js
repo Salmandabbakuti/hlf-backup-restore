@@ -27,6 +27,9 @@ class testContract extends Contract {
     await ctx.stub.putState(studentId,Buffer.from(JSON.stringify(marks))); 
     
     console.log('Student Marks added To the ledger Succesfully..');
+   let ret= await ctx.stub.getFunctionAndParameters();
+   console.log(ret.fcn);
+   console.log(ret.params);
     
   }
 
