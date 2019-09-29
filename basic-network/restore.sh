@@ -12,7 +12,7 @@ sudo docker network prune
 
 sudo docker-compose -f restore-network.yml up -d
 #All done...
-sleep 5
+sleep 20
 
 #querying Data
 
