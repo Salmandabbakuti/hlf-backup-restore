@@ -13,8 +13,8 @@ mkdir orderer
 cd ..
 #Copying Peer and orderer data
 sleep 5
-docker cp peer0.org1.example.com:/var/hyperledger/production/ backup/peer/
-docker cp orderer.example.com:/var/hyperledger/production/orderer/ backup/orderer/
+sudo docker cp peer0.org1.example.com:/var/hyperledger/production/ backup/peer/
+sudo docker cp orderer.example.com:/var/hyperledger/production/orderer/ backup/orderer/
 
 #All done
 exit 1
