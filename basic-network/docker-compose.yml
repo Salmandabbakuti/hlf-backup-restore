@@ -43,7 +43,6 @@ services:
         - ./config/:/etc/hyperledger/configtx
         - ./crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/:/etc/hyperledger/msp/orderer
         - ./crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/:/etc/hyperledger/msp/peerOrg1
-        - orderer.example.com:/var/hyperledger/production/orderer
     networks:
       - basic
 
@@ -82,7 +81,6 @@ services:
         - ./crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp:/etc/hyperledger/msp/peer
         - ./crypto-config/peerOrganizations/org1.example.com/users:/etc/hyperledger/msp/users
         - ./config:/etc/hyperledger/configtx
-        - peer0.org1.example.com:/var/hyperledger/production
     depends_on:
       - orderer.example.com
       - couchdb
