@@ -81,7 +81,7 @@ services:
         - /var/run/:/host/var/run/
         - ./backup/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp:/etc/hyperledger/msp/peer
         - ./backup/crypto-config/peerOrganizations/org1.example.com/users:/etc/hyperledger/msp/users
-        - ./backupconfig:/etc/hyperledger/configtx
+        - ./backup/config:/etc/hyperledger/configtx
         - ./backup/peer/production:/var/hyperledger/production
     depends_on:
       - orderer.example.com
